@@ -81,8 +81,4 @@ public class DrawBuffer {
         }
         pixels.clear();
     }
-
-    public void clear() {
-        pixels.clear();
-    }
 }

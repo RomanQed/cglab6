@@ -1,9 +1,6 @@
 package com.github.romanqed.cglab6;
 
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Scene;
 import javafx.scene.control.Alert;
-import javafx.stage.Stage;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -47,13 +44,6 @@ final class Util {
         alert.setHeaderText(null);
         alert.setContentText(message);
         alert.show();
-    }
-
-    static Stage loadStage(String file, double width, double height) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource(file));
-        Stage stage = new Stage();
-        stage.setScene(new Scene(fxmlLoader.load(), width, height));
-        return stage;
     }
 
     static long calculateTime(Runnable runnable) {
