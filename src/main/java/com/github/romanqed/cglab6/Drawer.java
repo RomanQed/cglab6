@@ -33,7 +33,7 @@ public final class Drawer {
                 buffer.getPixel(x, y) != this.fill &&
                 x <= border) {
             flag = true;
-            x++;
+            ++x;
         }
         if (flag) {
             points.push(new Point(x - 1, y));

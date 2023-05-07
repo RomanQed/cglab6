@@ -59,8 +59,8 @@ public class DrawBuffer {
         double step = Math.max(Math.abs(dx), Math.abs(dy));
 
         // Calculate x-increment and y-increment for each step
-        double x_incr = (float) dx / step;
-        double y_incr = (float) dy / step;
+        double x_incr = dx / step;
+        double y_incr = dy / step;
 
         // Take the initial points as x and y
         double x = start.x;
